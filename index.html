@@ -11,7 +11,7 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ff8c00;
             color: #333;
         }
         * {
@@ -52,11 +52,12 @@
         /* Shop Section */
         #shop {
             padding: 60px 20px;
-            background-color: #ffffff;
+            background-color: #ffcc99;
             text-align: center;
             border-radius: 20px;
             margin: 20px;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 3px solid #000;
         }
         #shop h2 {
             font-size: 3rem;
@@ -76,34 +77,18 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             border-radius: 20px;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 3px solid #2c3e50;
+            border: 3px solid #000;
         }
-        .product-card img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-        .product-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-        }
-        .product-card h3 {
-            font-size: 1.5rem;
-            font-weight: bold;
+
+        /* About Us & Contact Sections */
+        #about, #contact {
+            padding: 60px 20px;
+            background-color: #ffcc99;
             text-align: center;
-        }
-        .product-card button {
-            background-color: #3498db;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 30px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .product-card button:hover {
-            background-color: #2980b9;
+            border-radius: 20px;
+            margin: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border: 3px solid #000;
         }
     </style>
 </head>
@@ -134,12 +119,12 @@
         </div>
     </section>
 
-    <section id="about" style="padding: 60px 20px; background-color: #fff; text-align: center; border-radius: 20px; margin: 20px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+    <section id="about">
         <h2>About Us</h2>
         <p>We are a creative studio dedicated to designing high-quality posters and stickers for your personal and professional needs.</p>
     </section>
 
-    <section id="contact" style="padding: 60px 20px; background-color: #fff; text-align: center; border-radius: 20px; margin: 20px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);">
+    <section id="contact">
         <h2>Contact Us</h2>
         <p>Email: contact@posterstickerstudio.com</p>
         <p>Phone: +123 456 7890</p>
