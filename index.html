@@ -123,13 +123,13 @@
                 <img src="https://via.placeholder.com/250" alt="Poster">
                 <h3><b>Poster Title</b></h3>
                 <p>$10.00</p>
-                <button class="add-to-cart" onclick="redirectToPayment()">Add to Cart</button>
+                <button class="add-to-cart" onclick="redirectToEmail()">Add to Cart</button>
             </div>
             <div class="product-card">
                 <img src="https://via.placeholder.com/250" alt="Sticker">
                 <h3><b>Sticker Title</b></h3>
                 <p>$5.00</p>
-                <button class="add-to-cart" onclick="redirectToPayment()">Add to Cart</button>
+                <button class="add-to-cart" onclick="redirectToEmail()">Add to Cart</button>
             </div>
         </div>
     </section>
@@ -145,12 +145,10 @@
     </section>
 
     <script>
-        function redirectToPayment() {
-            const userHasApp = confirm("Do you have the payment app installed?");
-            if (userHasApp) {
-                window.location.href = "your-app-link://payment";
-            } else {
-                window.location.href = "https://www.paymentwebsite.com";
+        function redirectToEmail() {
+            const proofUploaded = confirm("Have you attached the payment proof?");
+            if (proofUploaded) {
+                window.location.href = "mailto:posterstickerstudio@gmail.com?subject=Order%20Confirmation&body=Please%20find%20the%20payment%20proof%20attached.";
             }
         }
     </script>
